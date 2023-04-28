@@ -1,0 +1,26 @@
+CVX,vaccine_nm,valence
+207,COVID-19 Moderna,monovalent
+208,COVID-19 Pfizer,monovalent
+210,COVID-19 AstraZeneca,monovalent
+211,COVID-19 Novavax,monovalent
+212,COVID-19 Janssen,monovalent
+213,COVID-19 (Unspecified),UNK
+217,COVID-19 PFR-BNT 30mcg/0.3mL,monovalent
+218,COVID-19 PFR-BNT 10mcg/0.2mL,monovalent
+219,COVID-19 PFR-BNT 3mcg/0.2mL,monovalent
+221,Moderna 50mcg/0.5mL,monovalent
+225,"COVID-19 Sanofi, 5 mcg/0.5ml",monovalent
+228,COVID-19 Moderna 25 mcg ped,monovalent
+229,Moderna Bivalent 50mcg/0.5mL,bivalent
+230,Moderna Bivalent 10mcg/0.2mL,bivalent
+300,Pfizer Bivalent 30mcg/0.3mL,bivalent
+301,Pfizer Bivalent 10mcg/0.2mL,bivalent
+302,Pfizer Bivalent 3mcg/0.2mL,bivalent
+500,"COVID-19 Non-US Vaccine, Unk",UNK
+502,COVID-19 Non-US COVAXIN,monovalent
+506,COVID-19 CanSino Bio/BJ Inst,monovalent
+510,"COVID-19 NonUS Sinphrm,BIBP",monovalent
+511,"COVID-19 NonUS CoronaVac,Si...",monovalent
+512,"COVID19 NonUS Medicago,Covi...",monovalent
+519,COVID-19 NonUS Spikevax Biv,bivalent
+520,COVID-19 NonUS Comirnaty Biv,bivalent

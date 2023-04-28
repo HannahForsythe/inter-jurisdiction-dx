@@ -1,0 +1,225 @@
+CVX,vax_nm
+01,DTP (historical)
+02,OPV (polio)
+03,MMR
+04,MR (Measles-Rubella)
+05,Measles
+06,Rubella
+07,Mumps
+08,Hep B (ped/adol)
+09,Td (adult) adsorbed
+10,IPV (polio)
+100,PCV7 (Prevnar)
+101,Typhoid ViCPS
+103,meningococcal C conjugate
+104,Hep A-Hep B (Twinrix)
+105,vaccinia (smallpox) diluted
+106,DTaP (Daptacel)
+107,DTaP Unspecified
+108,Meningoc. ACWY (MCV4 or MPSV4)
+109,Pneumococcal Unspecified
+11,Pertussis
+110,DTaP-Hep B-IPV (Pediarix)
+111,Influenza LAIV (Flumist)
+112,"Tetanus Toxoid, unspecified"
+113,Td PF (adol/adult)
+114,MenACWY-D (Menactra)
+115,Tdap (adol/adult)
+116,RV5 (Rotateq)
+117,VZIG (IND)
+118,HPV2 (Cervarix)
+119,RV1 (Rotarix)
+12,Diphtheria antitoxin
+120,DTaP-Hib-IPV (Pentacel)
+121,Zoster ZVL (Zostavax)
+122,RV (historical)
+123,H5N1 Vaccine
+125,H1N1-09 (Nasal)
+126,"H1N1-09 (P-Free, Inject)"
+127,H1N1-09 (Inject)
+128,H1N1-09 (Unspecified)
+129,"Japanese Enceph, unspecified"
+13,TIG: Tetanus globulin
+130,DTaP-IPV
+131,"typhus, historical"
+133,PCV13 (Prevnar13)
+134,Japanese Encephalitis IM
+135,Influenza IIV3 High Dose
+136,MenACWY-CRM (Menveo)
+137,HPV (historical)
+138,Td (adult) (not adsorbed)
+139,Td (historical)
+14,ISG/IgG (historical)
+140,"Influenza IIV3 (P-free,inject)"
+141,Influenza IIV3 (inject)
+142,"Tetanus Toxoid, not adsorbed"
+143,"Adenovirus, 4and7, live, oral"
+144,Influenza Intdrml IIV3(P-free)
+146,DTaP-IPV-Hib-HepB
+147,MCV4 (Menactra or Menveo)
+148,HIBMENCY
+149,Influenza LAIV4 Flumist
+15,Influenza IIV3 (Historical)
+150,"Influenza IIV4 (P-free,inject)"
+151,Influenza Nasal-unspecified
+152,PCV Unspecified
+153,Influenza ccIIV3(FluclvxPfree)
+155,"Influenza RIV3(Flublok,P-Free)"
+156,Rho(D)Immune globulin-IV or IM
+157,Rho(D) Immune globulin
+158,Influenza IIV4 (inject)
+159,RHO(D) Unspecified formulation
+16,"Influenza vaccine, whole virus"
+160,2013 H5N1 monovalent
+161,"Influenza IIV4 Ped(P-free,inj)"
+162,MenB-FHbp (Trumenba)
+163,MenB-4C (Bexsero)
+164,Meningococcal B Unspecified
+165,HPV9
+166,"Influenza IIV4 ID (P-free,inj)"
+167,Meningococcal  Historical
+168,Influenza IIV3(Fluad p-free)
+169,Hep A Live (Non-US)
+17,Hib (historical)
+171,Influenza ccIIV4(FluclvxPfInj)
+174,Cholera (Vaxchora)
+175,Rabies-IM Diploid (Imovax)
+176,Rabies-IM fibroblas (RabAvert)
+177,PneumoPCV
+178,OPV bivalent Non-US
+179,OPV monovalent Non-US
+18,Rabies (IM injection)
+181,Anthrax immune globulin
+182,"OPV, Unspecified"
+183,Yellow Fever-Alt. Formulation
+184,Yellow Fever-Unspecified
+185,"Influenza RIV4(Flublok,P-free)"
+186,Influenza ccIIV4(Fluclvx Quad)
+187,Zoster RZV (Shingrix)
+188,"Zoster,unspecified formulation"
+189,Hep B adjuvanted (Heplisav-B)
+19,BCG
+193,Hep A-Hep B Non-US Twinrix Jr
+194,Infl Southrn Hemis (unsp)
+195,"DT,IPV Non-US adsorbed"
+196,"Td (adult ads., PF, Lf unsp)"
+197,IIV4 High Dose Fluzone Quad
+20,DTaP (pediatric)
+200,"Infl IIV4 S. Hemi,ped(Fluzone)"
+201,"Infl IIV4 S. Hemi,PF(Fluzone)"
+202,Infl IIV4 S. Hemi(Fluzone)
+203,MenACWY-TT (MenQuadfi)
+204,Ebola Zaire Live (ERVEBO)
+205,"Infl aIIV4(Fluad Qd,pfree,inj)"
+206,Smallpox mpox
+207,COVID-19 Moderna
+208,COVID-19 Pfizer
+21,Varicella (Varivax)
+210,COVID-19 AstraZeneca
+211,COVID-19 Novavax
+212,COVID-19 Janssen
+213,COVID-19 (Unspecified)
+214,"Ebola, unspecified historical"
+215,PCV15 (VAXNEUVANCE)
+216,PCV20 (Prevnar 20)
+217,COVID-19 PFR-BNT 30mcg/0.3mL
+218,COVID-19 PFR-BNT 10mcg/0.2mL
+219,COVID-19 PFR-BNT 3mcg/0.2mL
+22,DTP-Hib
+220,"HepB, 3-antigen (PreHevbrio)"
+221,Moderna 50mcg/0.5mL
+222,"Tick encephalitis vax, unspec"
+223,Tick encephalitis Ped 0.25mL
+224,Tick encephalitis PF 0.5mL
+225,"COVID-19 Sanofi, 5 mcg/0.5ml"
+228,COVID-19 Moderna 25 mcg ped
+229,Moderna Bivalent 50mcg/0.5mL
+23,Plague
+230,Moderna Bivalent 10mcg/0.2mL
+24,Anthrax
+25,Typhoid (oral)
+26,Cholera
+27,Botulinum Antitoxin
+28,DT (pediatric)
+29,CMVIG (IV)
+30,HBIG: Hep B globulin
+300,Pfizer Bivalent 30mcg/0.3mL
+301,Pfizer Bivalent 10mcg/0.2mL
+302,Pfizer Bivalent 3mcg/0.2mL
+31,Hep A (ped/hist)
+32,MPSV4 (Menomune)
+33,PPSV23 (Pneumovax)
+34,RIG: Rabies globulin
+35,TT (Tetanus Toxoid)(Adsorbed)
+36,VZIG
+37,Yellow Fever
+38,Rubella-Mumps
+39,Japanese Encephalitis SC
+40,Rabies (ID injection)
+41,Typhoid (parenteral)
+42,Hep B (adol/HR infant))
+43,Hep B (adult)
+44,Hep B (dialysis)
+45,Hep B (historical)
+46,Hib (ProHIBIT)
+47,Hib (Hib1)
+48,Hib (ActHIB/Hiberix)
+49,Hib (PedvaxHIB)
+50,DTaP-Hib (Trihibit)
+500,"COVID-19 Non-US Vaccine, Unk"
+501,COVID-19 Non-US QAZCOVID-IN
+502,COVID-19 Non-US COVAXIN
+503,COVID-19 LAV Non-US COVIVAC
+504,COVID-19 NonUS Sputnik Light
+505,COVID-19 Non-US Sputnik V
+506,COVID-19 CanSino Bio/BJ Inst
+507,COVID-19 NonUS AZL Bio/CN Acd
+508,COVID-19 Jiangsu Prov. Ctrs
+509,COVID-19 Non-US (EpiVacCorona)
+51,Hib-HepB (Comvax)
+510,"COVID-19 NonUS Sinphrm,BIBP"
+511,"COVID-19 NonUS CoronaVac,Si..."
+512,"COVID19 NonUS Medicago,Covi..."
+513,"COVID19 NonUS AZLongcom,Zif..."
+514,"COVID19 NonUS ZydusCadila,Z..."
+515,"COVID19 NonUS Medigen,MVC-..."
+516,COVID-19 Non-US Minhai Bio...
+517,COVID19  NonUS BioELimited...
+518,"COVID-19 NonUS VLA 2001,Va"
+519,COVID-19 NonUS Spikevax Biv
+52,Hep A (adult)
+520,COVID-19 NonUS Comirnaty Biv
+53,Typhoid (parenteral) AKD
+54,"adenovirus, type 4"
+55,"adenovirus, type 7"
+62,HPV4 (Gardasil)
+66,Lyme Vaccine
+71,RSV-IGIV
+74,RV7 (RotaShield)
+75,Smallpox
+77,Tick encephalitis vax (non-US)
+79,Vaccinia IG
+82,Adenovirus Unspecified
+83,Hep A (ped/adol)
+84,HepA Historical Ped/Adol 3dose
+85,Hep A (historical)
+86,Immune Globulin (IM)
+87,Immune Globulin- (IV)
+88,Influenza (historical)
+89,Polio (historical)
+90,Rabies (historical)
+901,Amantadine
+902,Rimantadine
+903,Oseltamivir
+904,Zanamivir
+907,Streptomycin
+908,Gentamicin
+909,Doxycycline
+91,Typhoid (historical)
+910,Chloramphenicol
+911,Ciprofloxacin
+912,Amoxicillan
+93,RSV-MAB (Synagis)
+94,MMRV (ProQuad)
+96,TST-PPD Intradermal
+98,"TST, unspecified"
