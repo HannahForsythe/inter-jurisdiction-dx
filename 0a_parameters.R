@@ -1,3 +1,4 @@
+
 # What is the state code for your home jurisdiction?
 home_st <- 'MI'
 # What are the state codes of the jurisdictions you exchange data with?

@@ -1,0 +1,105 @@
+
+DO NOT CHANGE THE FOLDER STRUCTURE of this project. The analysis scripts
+will not run. 
+
+DO NOT DELETE crosswalk files in the 'input' subfolder: 
+  -crosswalk_132321.csv maps CVX codes to corresponding antigen and number of 
+    required doses in the adolescent series.
+  -crosswalk_4313314.csv maps CVX codes to corresponding antigen(s) and number 
+    of required doses in the childhood 7-series.
+  -crosswalk_COVID.csv maps CVX codes to vaccine type (J&J, Pfizer, Bivalent 
+    Booster, etc.) for evaluating the COVID series.
+  -crosswalk_flu.csv identifies CVX codes that are flu shots.
+  -crosswalk_CVX_nm.csv contains all CVX codes currently accepted, plus names
+  -mcir_fips_national_county.csv lists all valid county and state FIPS codes in 
+    the US. Data source: MCIR (Michigan Care Improvement Registry).
+    
+DO NOT CHANGE the definition of any functions in helper_functions.R The analysis 
+scripts will not run as intended.
+
+DO NOT DELETE files from the subfolder "input/census". These Bridged-Race 
+  population estimates from the National Vital Statistics office (available: 
+  https://www.cdc.gov/nchs/nvss/bridged_race/data_documentation.htm) are used to
+  generate denominators for ages 18+, from 2010 to 2020 (2010 and 2020 data
+  reused for any years outside that range). To reduce file size, YOU MAY DELETE
+  files corresponding to years when data exchange did not occur in your 
+  jurisdiction.  
+  
+  [  If you wish to provide your own adult population estimates, create a file
+    "input/denom.csv" that contains the total population of every 
+    county x age x sex x race_1 group in your jurisdiction, for every 
+    year since data exchange began.
+	  See specs/Example_minimum_dataset-[DATE].xlsx for definitions and examples.	
+	  YOU WILL BE RESPONSIBLE FOR REWRITING ANY CODE that generates denominators,
+	  including but not limited to: 
+	  - 3_covid_cvg.R Section 1. "create denominator"
+	  - 9_flu_cvg.R Section 1. "create denominator"                              ]
+
+
+## Before you begin ##
+1. Install the following R packages: 
+  tidyverse
+  readxl
+  lubridate
+  janitor
+  zoo
+  gt
+  gtsummary
+  flextable
+  cowplot
+
+2. Open 0a_parameters.R and set the paramaters for your jurisdiction.
+
+3. Prepare your data and save it in the 'input' subfolder:
+  - immz.zip
+	A shot-level dataset including the FULL immunization history of every 
+	person with at least one shared shot.
+	See specs/Example_minimum_dataset-[DATE].xlsx for definitions and examples.	
+	See input/immz_dummy.zip for a more realistic example.
+  - demog.zip
+	A person-level dataset including every non-deceased client in the native IIS,
+	regardless of residence or shot history.
+	See specs/Example_minimum_dataset-[DATE].xlsx for definitions and examples.	
+	See input/demog_dummy.zip for a more realistic example.
+
+
+4. Execute 0b_data_checks.R This will check your data for conditions like:
+  -every person in immz.csv is present in demog.csv
+  -birth dates are before admin dates
+  -columns are correctly named
+  -fields all have valid values
+  -etc.
+ 
+5. REMOVE any records that fail to meet all 15 conditions. 
+
+## Instructions for running the analyses ##
+0. Set the working directory to the source file location. (In R studio, select 
+  Session > Set Working Directory > To Source File Location)
+
+1. Each analysis script is designed to run independently of the others, meaning
+that you should be able to run each one in a NEW R session:  
+  - 1_immz_analysis.R
+  - 2_person_analysis.R
+  - 3_COVID_cvg.R
+  - 4_4313314_cvg.R
+  - 5_MMR_cvg.R -> just a placeholder for now
+  - 6_DTaP_cvg.R -> just a placeholder for now
+  - 7_132321_cvg.R
+  - 8_Tdap_cvg.R -> just a placeholder for now
+  - 9_Flu_cvg.R
+
+2. If you wish to run analyses 1-9 in the SAME session, you can skip these two
+lines:
+
+    immz <- read_delim("input/immz.zip") %>%
+      janitor::clean_names() %>% 
+      mutate(report_yr = year(report_date))
+    
+    demog <- read_delim("input/demog.zip") %>%
+      janitor::clean_names() 
+
+
+3. To create summary figures, run 10_cvg_figs.R; if run in the SAME session as 
+  the analyses, you can skip Section  0 "read in the raw data". Othewise, 
+  you must re-read in the data that was exported to "~/output/3_coverage/" by 
+  analyses 3-9. Provide the appropriate name and date for each csv file.
