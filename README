@@ -55,12 +55,12 @@ DO NOT DELETE files from the subfolder "input/census". These Bridged-Race
 	A shot-level dataset including the FULL immunization history of every 
 	person with at least one shared shot.
 	See specs/Example_minimum_dataset-[DATE].xlsx for definitions and examples.	
-	See input/immz_dummy.zip for a more realistic example.
+	See input/immz_dummy.zip for a more realistic simulated dataset.
   - demog.zip
 	A person-level dataset including every non-deceased client in the native IIS,
 	regardless of residence or shot history.
 	See specs/Example_minimum_dataset-[DATE].xlsx for definitions and examples.	
-	See input/demog_dummy.zip for a more realistic example.
+	See input/demog_dummy.zip for a more realistic simulated dataset.
 
 
 4. Execute 0b_data_checks.R This will check your data for conditions like:
