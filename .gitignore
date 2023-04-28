@@ -1,0 +1,12 @@
+#data
+input/demog.*
+input/immz.*
+
+#R session info
+*.Rhistory
+
+#temporary folder
+temp
+
+#specific analyses
+AIRA
