@@ -5,7 +5,7 @@ source("0a_parameters.R")
 #-----------------------------------------------------------------------------#
 # 0. read in the raw data (skip if running all coverage analyses in same session)
 #-----------------------------------------------------------------------------#
-# Put the export date of each dataset in your "~/output/3_coverage/" directory
+# Put the export date of each county-level dataset in  "~/output/3_coverage/" 
 namedates <- list(
   c("flu_cnty", "20230404"), 
   c("covid_cnty", "20230404"),
@@ -191,3 +191,4 @@ ggsave(filename = paste0("output/3_coverage/flu_cnty_bc-", home_st, "-", format(
 
 ggsave(filename = paste0("output/3_coverage/flu_cnty_bc-", home_st, "-", format(Sys.Date(), "%Y%m%d"),".png"),
        plot = cvg_cnty_flu)
+

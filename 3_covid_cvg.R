@@ -195,13 +195,15 @@ covid_race1 <- left_join(
   # aggregate num
   num_covid %>% 
     filter(in_state == TRUE) %>% 
-    group_by(race_1) %>% 
+    mutate(pop_src = if_else(age <18, "iis", 'census'))  %>% 
+    group_by(pop_src, race_1) %>% 
     summarise(init_diff_n = sum(init_diff),
               utd_diff_n = sum(utd_diff)),
   # aggregate denom
   denom_covid %>% 
     filter(in_state == TRUE) %>% 
-    group_by(race_1) %>% 
+    mutate(pop_src = if_else(age <18, "iis", 'census'))  %>% 
+    group_by(pop_src, race_1) %>% 
     summarise(pop = sum(pop))
 ) %>% mutate(
   init_diff_cvg = round(init_diff_n/pop*100, 2),
@@ -213,13 +215,15 @@ covid_race1_bc <- left_join(
   # aggregate num
   num_covid %>% 
     filter(in_state == TRUE, county_fips %in% c(border_fips)) %>% 
-    group_by(race_1) %>% 
+    mutate(pop_src = if_else(age <18, "iis", 'census'))  %>% 
+    group_by(pop_src, race_1) %>%  
     summarise(init_diff_n = sum(init_diff),
               utd_diff_n = sum(utd_diff)),
   # aggregate denom
   denom_covid %>% 
     filter(in_state == TRUE, county_fips %in% c(border_fips)) %>% 
-    group_by(race_1) %>% 
+    mutate(pop_src = if_else(age <18, "iis", 'census'))  %>% 
+    group_by(pop_src, race_1) %>% 
     summarise(pop = sum(pop))
 ) %>% mutate(
   init_diff_cvg = round(init_diff_n/pop*100, 2),

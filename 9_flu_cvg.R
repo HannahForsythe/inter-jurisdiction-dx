@@ -24,7 +24,7 @@ flu_start <- if_else(
   year(exchg_start)-1    
 )
 
-# figure out the file names to use for those seasons
+# figure out the census files to use for each season
 files_to_read <- tibble(
   "file" = list.files("input/census/"),
   "path" = paste0("input/census/", file),
@@ -42,16 +42,18 @@ denom_flu_1 <- map(
   .progress = TRUE
 ) |> list_rbind()
 
+# If any seasons fall outside the 2010-2020 range for which census
+# data is available, use the closest year available.
 denom_flu <- denom_flu_1
 for (yr in flu_start:2022) {
  if (yr < 2010) {
-   # Minnesota: reuse year 2010 data for 2007-08 through 2009-10 seasons
+   # Reuse year 2010 data for 2007-08 through 2009-10 seasons
    denom_flu <- bind_rows(
      denom_flu,
      denom_flu_1 %>% filter(year == 2010) %>% mutate(year = yr)
    )   
  } else if (yr > 2020) {
-   # MN and MI: reuse year 2020 data for 2021-22 and 2022-23 seasons
+   # Reuse year 2020 data for 2021-22 and 2022-23 seasons
    denom_flu <- bind_rows(
      denom_flu,
      denom_flu_1 %>% filter(year == 2020) %>% mutate(year = yr)
@@ -108,6 +110,7 @@ flu_shared <- immz %>%
     utd_diff = (utd_w - utd_wo)
   ) 
 
+# examine the coverage increases for these folks - does it look reasonable?
 flu_shared %>% summary_as_factor()
 
 # create the numerator: number of 18+ year-olds brought utd each season by 
@@ -139,7 +142,9 @@ num_flu <- flu_shared %>%
     utd_diff = sum(utd_diff, na.rm = TRUE)
   )
 
+# does the numerator look reasonable?
 num_flu %>% summary_as_factor()
+
 #-----------------------------------------------------------------------------#
 # 3. How much does data sharing contribute to each season's
 # coverage, among current residents? 

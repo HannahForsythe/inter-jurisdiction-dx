@@ -66,7 +66,7 @@ s4313314_crosswalk <-
 find_4313314_UTD <- function(yr) {
   left_join(
     # select 4313314 CVXs, link to antigen & num required doses 
-    s4313314_crosswalk, immz, by = "cvx"
+    s4313314_crosswalk, immz, by = "cvx", multiple = "all"
   ) %>%
     filter(
       # shots admin as of Jan. 1

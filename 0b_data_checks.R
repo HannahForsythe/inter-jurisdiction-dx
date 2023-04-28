@@ -8,7 +8,7 @@ immz <- read_delim("input/immz.zip") %>%
   janitor::clean_names() %>% 
   mutate(report_yr = year(report_date))
 
-demog <- read_delim("input/demog.zip") %>%
+demog <- read_delim("input/demog.csv") %>%
   janitor::clean_names() 
 
 # visually inspect your data. Does everything look right?

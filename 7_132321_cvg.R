@@ -43,7 +43,7 @@ identify_13_17 <- function(yr) {
 # apply above function to every year since data exchange began, and pipe the
 # result into a dataframe. Unlike other denominators (ex. denom_flu), 
 # THIS IS A PERSON-LEVEL DENOMINATOR. Children who fall into the 13-17 age range
-# for two consecutive years will be included twice.
+# for five consecutive years will be included five times.
 exchg_yrs <- year(exchg_start):year(Sys.Date())
 denom_132321 <- map(
   exchg_yrs, 
