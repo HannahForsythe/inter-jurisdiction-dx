@@ -1,6 +1,7 @@
 #data
 input/demog.*
 input/immz.*
+output/*
 
 #temporary folder
 temp
@@ -13,3 +14,4 @@ AIRA
 
 #Thumbnail images
 *Thumbs.db
+.Rproj.user
