@@ -2,6 +2,7 @@
 input/demog.*
 input/immz.*
 output/1_immz/*
+output/2_persons/*
 output/3_coverage/*
 
 #temporary folder
