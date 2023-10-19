@@ -1,7 +1,8 @@
 #data
 input/demog.*
 input/immz.*
-output/*
+output/1_immz/*
+output/3_coverage/*
 
 #temporary folder
 temp
