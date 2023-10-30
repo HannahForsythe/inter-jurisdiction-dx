@@ -87,7 +87,7 @@ iz_cnty_map
 # 3. Average reporting delay
 #-----------------------------------------------------------------------------#
 rpt_delay <- immz %>%
-  filter(Sys.Date() - admin_date) %>%
+  filter(Sys.Date() > admin_date) %>%
   mutate(report_delay = as.numeric(paste(report_date - admin_date)))
 
 rpt_delay_hist_N <- rpt_delay %>%
@@ -131,6 +131,11 @@ rpt_delay_hist_P
 #-----------------------------------------------------------------------------#
 # 4. export results
 #-----------------------------------------------------------------------------#
+# Create the output (sub)directory
+if (!dir.exists("output/1_immz")) {
+  dir.create("output/1_immz", recursive = TRUE)
+}
+
 # export raw dataframes as csv files
 write.csv(iz_yr, 
           file = paste0("output/1_immz/iz_yr-", home_st, "-", format(Sys.Date(), "%Y%m%d"),".csv"),
