@@ -290,8 +290,12 @@ pr_eth_fig
 #-----------------------------------------------------------------------------#
 # 5. export results
 #-----------------------------------------------------------------------------#
-# export raw dataframes as csv files
+# Create the output (sub)directory
+if (!dir.exists("output/2_persons")) {
+  dir.create("output/2_persons", recursive = TRUE)
+}
 
+# export raw dataframes as csv files
 write.csv(pr_topline, 
           file = paste0("output/2_persons/pr_topline-", home_st, "-", format(Sys.Date(), "%Y%m%d"),".csv"),
           row.names = FALSE)
