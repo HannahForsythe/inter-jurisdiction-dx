@@ -275,6 +275,11 @@ flu_age_bc <- left_join(
 #-----------------------------------------------------------------------------#
 # 8. export results
 #-----------------------------------------------------------------------------#
+# Create the output (sub)directory
+if (!dir.exists("output/3_coverage")) {
+  dir.create("output/3_coverage", recursive = TRUE)
+}
+
 # export raw dataframes as csv files
 write.csv(flu_state, 
           file = paste0("output/3_coverage/flu_state-", home_st, "-", format(Sys.Date(), "%Y%m%d"),".csv"),

@@ -212,6 +212,11 @@ s4313314_race1_bc <- num_denom_4313314 %>%
 #-----------------------------------------------------------------------------#
 # 7. export results
 #-----------------------------------------------------------------------------#
+# Create the output (sub)directory
+if (!dir.exists("output/3_coverage")) {
+  dir.create("output/3_coverage", recursive = TRUE)
+}
+
 # export raw dataframes as csv files
 write.csv(s4313314_state, 
           file = paste0("output/3_coverage/s4313314_state-", home_st, "-", format(Sys.Date(), "%Y%m%d"),".csv"),
