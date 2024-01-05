@@ -1,225 +1,225 @@
-CVX,vax_nm
-01,DTP (historical)
-02,OPV (polio)
-03,MMR
-04,MR (Measles-Rubella)
-05,Measles
-06,Rubella
-07,Mumps
-08,Hep B (ped/adol)
-09,Td (adult) adsorbed
-10,IPV (polio)
-100,PCV7 (Prevnar)
-101,Typhoid ViCPS
-103,meningococcal C conjugate
-104,Hep A-Hep B (Twinrix)
-105,vaccinia (smallpox) diluted
-106,DTaP (Daptacel)
-107,DTaP Unspecified
-108,Meningoc. ACWY (MCV4 or MPSV4)
-109,Pneumococcal Unspecified
-11,Pertussis
-110,DTaP-Hep B-IPV (Pediarix)
-111,Influenza LAIV (Flumist)
-112,"Tetanus Toxoid, unspecified"
-113,Td PF (adol/adult)
-114,MenACWY-D (Menactra)
-115,Tdap (adol/adult)
-116,RV5 (Rotateq)
-117,VZIG (IND)
-118,HPV2 (Cervarix)
-119,RV1 (Rotarix)
-12,Diphtheria antitoxin
-120,DTaP-Hib-IPV (Pentacel)
-121,Zoster ZVL (Zostavax)
-122,RV (historical)
-123,H5N1 Vaccine
-125,H1N1-09 (Nasal)
-126,"H1N1-09 (P-Free, Inject)"
-127,H1N1-09 (Inject)
-128,H1N1-09 (Unspecified)
-129,"Japanese Enceph, unspecified"
-13,TIG: Tetanus globulin
-130,DTaP-IPV
-131,"typhus, historical"
-133,PCV13 (Prevnar13)
-134,Japanese Encephalitis IM
-135,Influenza IIV3 High Dose
-136,MenACWY-CRM (Menveo)
-137,HPV (historical)
-138,Td (adult) (not adsorbed)
-139,Td (historical)
-14,ISG/IgG (historical)
-140,"Influenza IIV3 (P-free,inject)"
-141,Influenza IIV3 (inject)
-142,"Tetanus Toxoid, not adsorbed"
-143,"Adenovirus, 4and7, live, oral"
-144,Influenza Intdrml IIV3(P-free)
-146,DTaP-IPV-Hib-HepB
-147,MCV4 (Menactra or Menveo)
-148,HIBMENCY
-149,Influenza LAIV4 Flumist
-15,Influenza IIV3 (Historical)
-150,"Influenza IIV4 (P-free,inject)"
-151,Influenza Nasal-unspecified
-152,PCV Unspecified
-153,Influenza ccIIV3(FluclvxPfree)
-155,"Influenza RIV3(Flublok,P-Free)"
-156,Rho(D)Immune globulin-IV or IM
-157,Rho(D) Immune globulin
-158,Influenza IIV4 (inject)
-159,RHO(D) Unspecified formulation
-16,"Influenza vaccine, whole virus"
-160,2013 H5N1 monovalent
-161,"Influenza IIV4 Ped(P-free,inj)"
-162,MenB-FHbp (Trumenba)
-163,MenB-4C (Bexsero)
-164,Meningococcal B Unspecified
-165,HPV9
-166,"Influenza IIV4 ID (P-free,inj)"
-167,Meningococcal  Historical
-168,Influenza IIV3(Fluad p-free)
-169,Hep A Live (Non-US)
-17,Hib (historical)
-171,Influenza ccIIV4(FluclvxPfInj)
-174,Cholera (Vaxchora)
-175,Rabies-IM Diploid (Imovax)
-176,Rabies-IM fibroblas (RabAvert)
-177,PneumoPCV
-178,OPV bivalent Non-US
-179,OPV monovalent Non-US
-18,Rabies (IM injection)
-181,Anthrax immune globulin
-182,"OPV, Unspecified"
-183,Yellow Fever-Alt. Formulation
-184,Yellow Fever-Unspecified
-185,"Influenza RIV4(Flublok,P-free)"
-186,Influenza ccIIV4(Fluclvx Quad)
-187,Zoster RZV (Shingrix)
-188,"Zoster,unspecified formulation"
-189,Hep B adjuvanted (Heplisav-B)
-19,BCG
-193,Hep A-Hep B Non-US Twinrix Jr
-194,Infl Southrn Hemis (unsp)
-195,"DT,IPV Non-US adsorbed"
-196,"Td (adult ads., PF, Lf unsp)"
-197,IIV4 High Dose Fluzone Quad
-20,DTaP (pediatric)
-200,"Infl IIV4 S. Hemi,ped(Fluzone)"
-201,"Infl IIV4 S. Hemi,PF(Fluzone)"
-202,Infl IIV4 S. Hemi(Fluzone)
-203,MenACWY-TT (MenQuadfi)
-204,Ebola Zaire Live (ERVEBO)
-205,"Infl aIIV4(Fluad Qd,pfree,inj)"
-206,Smallpox mpox
-207,COVID-19 Moderna
-208,COVID-19 Pfizer
-21,Varicella (Varivax)
-210,COVID-19 AstraZeneca
-211,COVID-19 Novavax
-212,COVID-19 Janssen
-213,COVID-19 (Unspecified)
-214,"Ebola, unspecified historical"
-215,PCV15 (VAXNEUVANCE)
-216,PCV20 (Prevnar 20)
-217,COVID-19 PFR-BNT 30mcg/0.3mL
-218,COVID-19 PFR-BNT 10mcg/0.2mL
-219,COVID-19 PFR-BNT 3mcg/0.2mL
-22,DTP-Hib
-220,"HepB, 3-antigen (PreHevbrio)"
-221,Moderna 50mcg/0.5mL
-222,"Tick encephalitis vax, unspec"
-223,Tick encephalitis Ped 0.25mL
-224,Tick encephalitis PF 0.5mL
-225,"COVID-19 Sanofi, 5 mcg/0.5ml"
-228,COVID-19 Moderna 25 mcg ped
-229,Moderna Bivalent 50mcg/0.5mL
-23,Plague
-230,Moderna Bivalent 10mcg/0.2mL
-24,Anthrax
-25,Typhoid (oral)
-26,Cholera
-27,Botulinum Antitoxin
-28,DT (pediatric)
-29,CMVIG (IV)
-30,HBIG: Hep B globulin
-300,Pfizer Bivalent 30mcg/0.3mL
-301,Pfizer Bivalent 10mcg/0.2mL
-302,Pfizer Bivalent 3mcg/0.2mL
-31,Hep A (ped/hist)
-32,MPSV4 (Menomune)
-33,PPSV23 (Pneumovax)
-34,RIG: Rabies globulin
-35,TT (Tetanus Toxoid)(Adsorbed)
-36,VZIG
-37,Yellow Fever
-38,Rubella-Mumps
-39,Japanese Encephalitis SC
-40,Rabies (ID injection)
-41,Typhoid (parenteral)
-42,Hep B (adol/HR infant))
-43,Hep B (adult)
-44,Hep B (dialysis)
-45,Hep B (historical)
-46,Hib (ProHIBIT)
-47,Hib (Hib1)
-48,Hib (ActHIB/Hiberix)
-49,Hib (PedvaxHIB)
-50,DTaP-Hib (Trihibit)
-500,"COVID-19 Non-US Vaccine, Unk"
-501,COVID-19 Non-US QAZCOVID-IN
-502,COVID-19 Non-US COVAXIN
-503,COVID-19 LAV Non-US COVIVAC
-504,COVID-19 NonUS Sputnik Light
-505,COVID-19 Non-US Sputnik V
-506,COVID-19 CanSino Bio/BJ Inst
-507,COVID-19 NonUS AZL Bio/CN Acd
-508,COVID-19 Jiangsu Prov. Ctrs
-509,COVID-19 Non-US (EpiVacCorona)
-51,Hib-HepB (Comvax)
-510,"COVID-19 NonUS Sinphrm,BIBP"
-511,"COVID-19 NonUS CoronaVac,Si..."
-512,"COVID19 NonUS Medicago,Covi..."
-513,"COVID19 NonUS AZLongcom,Zif..."
-514,"COVID19 NonUS ZydusCadila,Z..."
-515,"COVID19 NonUS Medigen,MVC-..."
-516,COVID-19 Non-US Minhai Bio...
-517,COVID19  NonUS BioELimited...
-518,"COVID-19 NonUS VLA 2001,Va"
-519,COVID-19 NonUS Spikevax Biv
-52,Hep A (adult)
-520,COVID-19 NonUS Comirnaty Biv
-53,Typhoid (parenteral) AKD
-54,"adenovirus, type 4"
-55,"adenovirus, type 7"
-62,HPV4 (Gardasil)
-66,Lyme Vaccine
-71,RSV-IGIV
-74,RV7 (RotaShield)
-75,Smallpox
-77,Tick encephalitis vax (non-US)
-79,Vaccinia IG
-82,Adenovirus Unspecified
-83,Hep A (ped/adol)
-84,HepA Historical Ped/Adol 3dose
-85,Hep A (historical)
-86,Immune Globulin (IM)
-87,Immune Globulin- (IV)
-88,Influenza (historical)
-89,Polio (historical)
-90,Rabies (historical)
-901,Amantadine
-902,Rimantadine
-903,Oseltamivir
-904,Zanamivir
-907,Streptomycin
-908,Gentamicin
-909,Doxycycline
-91,Typhoid (historical)
-910,Chloramphenicol
-911,Ciprofloxacin
-912,Amoxicillan
-93,RSV-MAB (Synagis)
-94,MMRV (ProQuad)
-96,TST-PPD Intradermal
-98,"TST, unspecified"
+CVX,vax_nm,vax_cat,vax_cat_antigen
+01,DTP (historical),child routine,DTaP/DTP/DT
+02,OPV (polio),other,all other vaccines
+03,MMR,child routine,MMR
+04,MR (Measles-Rubella),child routine,MMR
+05,Measles,child routine,MMR
+06,Rubella,child routine,MMR
+07,Mumps,child routine,MMR
+08,Hep B (ped/adol),child routine,HepB
+09,Td (adult) adsorbed,adult routine,Td/Tdap
+10,IPV (polio),child routine,polio
+100,PCV7 (Prevnar),child routine,pneumococcal
+101,Typhoid ViCPS,other,all other vaccines
+103,meningococcal C conjugate,other,all other vaccines
+104,Hep A-Hep B (Twinrix),child routine,combination vaccines
+105,vaccinia (smallpox) diluted,other,all other vaccines
+106,DTaP (Daptacel),child routine,DTaP/DTP/DT
+107,DTaP Unspecified,child routine,DTaP/DTP/DT
+108,Meningoc. ACWY (MCV4 or MPSV4),adolescent routine,MenACWY
+109,Pneumococcal Unspecified,child routine,pneumococcal
+11,Pertussis,child routine,pertussis
+110,DTaP-Hep B-IPV (Pediarix),child routine,combination vaccines
+111,Influenza LAIV (Flumist),seasonal,flu
+112,"Tetanus Toxoid, unspecified",child routine,Td/Tdap
+113,Td PF (adol/adult),adolescent routine,Td/Tdap
+114,MenACWY-D (Menactra),adolescent routine,MenACWY
+115,Tdap (adol/adult),adolescent routine,Td/Tdap
+116,RV5 (Rotateq),child routine,rota
+117,VZIG (IND),other,all other vaccines
+118,HPV2 (Cervarix),adolescent routine,HPV
+119,RV1 (Rotarix),child routine,rota
+12,Diphtheria antitoxin,other,all other vaccines
+120,DTaP-Hib-IPV (Pentacel),child routine,combination vaccines
+121,Zoster ZVL (Zostavax),adult routine,shingles
+122,RV (historical),child routine,rota
+123,H5N1 Vaccine,other,all other vaccines
+125,H1N1-09 (Nasal),other,all other vaccines
+126,"H1N1-09 (P-Free, Inject)",other,all other vaccines
+127,H1N1-09 (Inject),other,all other vaccines
+128,H1N1-09 (Unspecified),other,all other vaccines
+129,"Japanese Enceph, unspecified",other,all other vaccines
+13,TIG: Tetanus globulin,other,all other vaccines
+130,DTaP-IPV,child routine,combination vaccines
+131,"typhus, historical",other,all other vaccines
+133,PCV13 (Prevnar13),child routine,pneumococcal
+134,Japanese Encephalitis IM,other,all other vaccines
+135,Influenza IIV3 High Dose,seasonal,flu
+136,MenACWY-CRM (Menveo),adolescent routine,MenACWY
+137,HPV (historical),adolescent routine,HPV
+138,Td (adult) (not adsorbed),adolescent routine,Td/Tdap
+139,Td (historical),adolescent routine,Td/Tdap
+14,ISG/IgG (historical),other,all other vaccines
+140,"Influenza IIV3 (P-free,inject)",seasonal,flu
+141,Influenza IIV3 (inject),seasonal,flu
+142,"Tetanus Toxoid, not adsorbed",adolescent routine,Td/Tdap
+143,"Adenovirus, 4and7, live, oral",other,all other vaccines
+144,Influenza Intdrml IIV3(P-free),seasonal,flu
+146,DTaP-IPV-Hib-HepB,child routine,combination vaccines
+147,MCV4 (Menactra or Menveo),adolescent routine,MenACWY
+148,HIBMENCY,child routine,Hib
+149,Influenza LAIV4 Flumist,seasonal,flu
+15,Influenza IIV3 (Historical),seasonal,flu
+150,"Influenza IIV4 (P-free,inject)",seasonal,flu
+151,Influenza Nasal-unspecified,seasonal,flu
+152,PCV Unspecified,child routine,pneumococcal
+153,Influenza ccIIV3(FluclvxPfree),seasonal,flu
+155,"Influenza RIV3(Flublok,P-Free)",seasonal,flu
+156,Rho(D)Immune globulin-IV or IM,other,all other vaccines
+157,Rho(D) Immune globulin,other,all other vaccines
+158,Influenza IIV4 (inject),seasonal,flu
+159,RHO(D) Unspecified formulation,other,all other vaccines
+16,"Influenza vaccine, whole virus",seasonal,flu
+160,2013 H5N1 monovalent,other,all other vaccines
+161,"Influenza IIV4 Ped(P-free,inj)",seasonal,flu
+162,MenB-FHbp (Trumenba),other,all other vaccines
+163,MenB-4C (Bexsero),other,all other vaccines
+164,Meningococcal B Unspecified,other,all other vaccines
+165,HPV9,adolescent routine,HPV
+166,"Influenza IIV4 ID (P-free,inj)",seasonal,flu
+167,Meningococcal  Historical,adolescent routine,MenACWY
+168,Influenza IIV3(Fluad p-free),seasonal,flu
+169,Hep A Live (Non-US),other,all other vaccines
+17,Hib (historical),child routine,Hib
+171,Influenza ccIIV4(FluclvxPfInj),seasonal,flu
+174,Cholera (Vaxchora),other,all other vaccines
+175,Rabies-IM Diploid (Imovax),other,all other vaccines
+176,Rabies-IM fibroblas (RabAvert),other,all other vaccines
+177,PneumoPCV,child routine,pneumococcal
+178,OPV bivalent Non-US,other,OPV
+179,OPV monovalent Non-US,other,OPV
+18,Rabies (IM injection),other,all other vaccines
+181,Anthrax immune globulin,other,all other vaccines
+182,"OPV, Unspecified",other,OPV
+183,Yellow Fever-Alt. Formulation,other,all other vaccines
+184,Yellow Fever-Unspecified,other,all other vaccines
+185,"Influenza RIV4(Flublok,P-free)",seasonal,flu
+186,Influenza ccIIV4(Fluclvx Quad),seasonal,flu
+187,Zoster RZV (Shingrix),adult routine,shingles
+188,"Zoster,unspecified formulation",adult routine,shingles
+189,Hep B adjuvanted (Heplisav-B),child routine,HepB
+19,BCG,other,all other vaccines
+193,Hep A-Hep B Non-US Twinrix Jr,child routine,combination vaccines
+194,Infl Southrn Hemis (unsp),seasonal,flu
+195,"DT,IPV Non-US adsorbed",child routine,combination vaccines
+196,"Td (adult ads., PF, Lf unsp)",other,all other vaccines
+197,IIV4 High Dose Fluzone Quad,seasonal,flu
+20,DTaP (pediatric),child routine,DTaP/DTP/DT
+200,"Infl IIV4 S. Hemi,ped(Fluzone)",seasonal,flu
+201,"Infl IIV4 S. Hemi,PF(Fluzone)",seasonal,flu
+202,Infl IIV4 S. Hemi(Fluzone),seasonal,flu
+203,MenACWY-TT (MenQuadfi),adolescent routine,MenACWY
+204,Ebola Zaire Live (ERVEBO),other,all other vaccines
+205,"Infl aIIV4(Fluad Qd,pfree,inj)",seasonal,flu
+206,Smallpox mpox,other,all other vaccines
+207,COVID-19 Moderna,seasonal,covid
+208,COVID-19 Pfizer,seasonal,covid
+21,Varicella (Varivax),child routine,varicella
+210,COVID-19 AstraZeneca,seasonal,covid
+211,COVID-19 Novavax,seasonal,covid
+212,COVID-19 Janssen,seasonal,covid
+213,COVID-19 (Unspecified),seasonal,covid
+214,"Ebola, unspecified historical",other,all other vaccines
+215,PCV15 (VAXNEUVANCE),child routine,pneumococcal
+216,PCV20 (Prevnar 20),child routine,pneumococcal
+217,COVID-19 PFR-BNT 30mcg/0.3mL,seasonal,covid
+218,COVID-19 PFR-BNT 10mcg/0.2mL,seasonal,covid
+219,COVID-19 PFR-BNT 3mcg/0.2mL,seasonal,covid
+22,DTP-Hib,child routine,combination vaccines
+220,"HepB, 3-antigen (PreHevbrio)",child routine,HepB
+221,Moderna 50mcg/0.5mL,seasonal,covid
+222,"Tick encephalitis vax, unspec",other,all other vaccines
+223,Tick encephalitis Ped 0.25mL,other,all other vaccines
+224,Tick encephalitis PF 0.5mL,other,all other vaccines
+225,"COVID-19 Sanofi, 5 mcg/0.5ml",seasonal,covid
+228,COVID-19 Moderna 25 mcg ped,seasonal,covid
+229,Moderna Bivalent 50mcg/0.5mL,seasonal,covid
+23,Plague,other,all other vaccines
+230,Moderna Bivalent 10mcg/0.2mL,seasonal,covid
+24,Anthrax,other,all other vaccines
+25,Typhoid (oral),other,all other vaccines
+26,Cholera,other,all other vaccines
+27,Botulinum Antitoxin,other,all other vaccines
+28,DT (pediatric),child routine,DTaP/DTP/DT
+29,CMVIG (IV),other,all other vaccines
+30,HBIG: Hep B globulin,other,all other vaccines
+300,Pfizer Bivalent 30mcg/0.3mL,seasonal,covid
+301,Pfizer Bivalent 10mcg/0.2mL,seasonal,covid
+302,Pfizer Bivalent 3mcg/0.2mL,seasonal,covid
+31,Hep A (ped/hist),child routine,HepA
+32,MPSV4 (Menomune),adolescent routine,MenACWY
+33,PPSV23 (Pneumovax),adult routine,pneumococcal
+34,RIG: Rabies globulin,other,all other vaccines
+35,TT (Tetanus Toxoid)(Adsorbed),other,all other vaccines
+36,VZIG,other,all other vaccines
+37,Yellow Fever,other,all other vaccines
+38,Rubella-Mumps,child routine,rubella-mumps
+39,Japanese Encephalitis SC,other,all other vaccines
+40,Rabies (ID injection),other,all other vaccines
+41,Typhoid (parenteral),other,all other vaccines
+42,Hep B (adol/HR infant)),child routine,HepB
+43,Hep B (adult),adult routine,HepB
+44,Hep B (dialysis),adult routine,HepB
+45,Hep B (historical),child routine,HepB
+46,Hib (ProHIBIT),child routine,Hib
+47,Hib (Hib1),child routine,Hib
+48,Hib (ActHIB/Hiberix),child routine,Hib
+49,Hib (PedvaxHIB),child routine,Hib
+50,DTaP-Hib (Trihibit),child routine,combination vaccines
+500,"COVID-19 Non-US Vaccine, Unk",seasonal,covid
+501,COVID-19 Non-US QAZCOVID-IN,seasonal,covid
+502,COVID-19 Non-US COVAXIN,seasonal,covid
+503,COVID-19 LAV Non-US COVIVAC,seasonal,covid
+504,COVID-19 NonUS Sputnik Light,seasonal,covid
+505,COVID-19 Non-US Sputnik V,seasonal,covid
+506,COVID-19 CanSino Bio/BJ Inst,seasonal,covid
+507,COVID-19 NonUS AZL Bio/CN Acd,seasonal,covid
+508,COVID-19 Jiangsu Prov. Ctrs,seasonal,covid
+509,COVID-19 Non-US (EpiVacCorona),seasonal,covid
+51,Hib-HepB (Comvax),child routine,combination vaccines
+510,"COVID-19 NonUS Sinphrm,BIBP",seasonal,covid
+511,"COVID-19 NonUS CoronaVac,Si...",seasonal,covid
+512,"COVID19 NonUS Medicago,Covi...",seasonal,covid
+513,"COVID19 NonUS AZLongcom,Zif...",seasonal,covid
+514,"COVID19 NonUS ZydusCadila,Z...",seasonal,covid
+515,"COVID19 NonUS Medigen,MVC-...",seasonal,covid
+516,COVID-19 Non-US Minhai Bio...,seasonal,covid
+517,COVID19  NonUS BioELimited...,seasonal,covid
+518,"COVID-19 NonUS VLA 2001,Va",seasonal,covid
+519,COVID-19 NonUS Spikevax Biv,seasonal,covid
+52,Hep A (adult),other,all other vaccines
+520,COVID-19 NonUS Comirnaty Biv,seasonal,covid
+53,Typhoid (parenteral) AKD,other,all other vaccines
+54,"adenovirus, type 4",other,all other vaccines
+55,"adenovirus, type 7",other,all other vaccines
+62,HPV4 (Gardasil),adolescent routine,HPV
+66,Lyme Vaccine,other,all other vaccines
+71,RSV-IGIV,other,all other vaccines
+74,RV7 (RotaShield),child routine,rota
+75,Smallpox,other,all other vaccines
+77,Tick encephalitis vax (non-US),other,all other vaccines
+79,Vaccinia IG,other,all other vaccines
+82,Adenovirus Unspecified,other,all other vaccines
+83,Hep A (ped/adol),child routine,HepA
+84,HepA Historical Ped/Adol 3dose,child routine,HepA
+85,Hep A (historical),child routine,HepA
+86,Immune Globulin (IM),other,all other vaccines
+87,Immune Globulin- (IV),other,all other vaccines
+88,Influenza (historical),seasonal,flu
+89,Polio (historical),child routine,polio
+90,Rabies (historical),other,all other vaccines
+901,Amantadine,other,all other vaccines
+902,Rimantadine,other,all other vaccines
+903,Oseltamivir,other,all other vaccines
+904,Zanamivir,other,all other vaccines
+907,Streptomycin,other,all other vaccines
+908,Gentamicin,other,all other vaccines
+909,Doxycycline,other,all other vaccines
+91,Typhoid (historical),other,all other vaccines
+910,Chloramphenicol,other,all other vaccines
+911,Ciprofloxacin,other,all other vaccines
+912,Amoxicillan,other,all other vaccines
+93,RSV-MAB (Synagis),other,all other vaccines
+94,MMRV (ProQuad),child routine,combination vaccines
+96,TST-PPD Intradermal,other,all other vaccines
+98,"TST, unspecified",other,all other vaccines
