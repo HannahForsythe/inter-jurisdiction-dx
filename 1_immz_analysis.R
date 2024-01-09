@@ -150,7 +150,7 @@ iz_type_fig
 # 4. Average reporting delay
 #-----------------------------------------------------------------------------#
 rpt_delay <- immz %>%
-  filter(Sys.Date() > admin_date) %>%
+  filter(year(admin_date) == 2022) %>%
   mutate(report_delay = as.numeric(paste(report_date - admin_date)))
 
 rpt_delay_hist_N <- rpt_delay %>%
@@ -180,8 +180,9 @@ rpt_delay_hist_P <- rpt_delay %>%
   labs(
     title = str_wrap(
       paste0(
-        "Delay between administration and reporting, for shots administered within ",
-        paste(partner_st, collapse = ', ')
+        "Delay between administration and reporting, for shots administered in a partner state (",
+        paste(partner_st, collapse = ', '),
+        ")"
       ),
       45
     ), 
