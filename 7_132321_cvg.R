@@ -44,7 +44,7 @@ identify_13_17 <- function(yr) {
 # result into a dataframe. Unlike other denominators (ex. denom_flu), 
 # THIS IS A PERSON-LEVEL DENOMINATOR. Children who fall into the 13-17 age range
 # for five consecutive years will be included five times.
-exchg_yrs <- year(exchg_start):year(Sys.Date())
+exchg_yrs <- year(exchg_start):year(exchg_end)
 denom_132321 <- map(
   exchg_yrs, 
   identify_13_17,
@@ -67,7 +67,7 @@ s132321_crosswalk <-
 find_132321_UTD <- function(yr) {
   left_join(
     # select 132321 CVXs, link to antigen & num required doses 
-    s132321_crosswalk, immz, by = "cvx", multiple = "all"
+    s132321_crosswalk, immz, by = "cvx", multiple = "all", relationship = "many-to-many"
   ) %>%
     filter(
       # shots admin as of Jan. 1

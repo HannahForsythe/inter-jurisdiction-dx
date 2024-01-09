@@ -44,7 +44,7 @@ identify_19_35 <- function(yr) {
 # result into a dataframe. Unlike other denominators (ex. denom_flu), 
 # THIS IS A PERSON-LEVEL DENOMINATOR. Children who fall into the 19-35 age range
 # for two consecutive years will be included twice.
-exchg_yrs <- year(exchg_start):2023
+exchg_yrs <- year(exchg_start):year(exchg_end)
 denom_4313314 <- map(
   exchg_yrs, 
   identify_19_35,
@@ -64,7 +64,7 @@ s4313314_crosswalk <-
 find_4313314_UTD <- function(yr) {
   left_join(
     # select 4313314 CVXs, link to antigen & num required doses 
-    s4313314_crosswalk, immz, by = "cvx", multiple = "all"
+    s4313314_crosswalk, immz, by = "cvx", multiple = "all", relationship = "many-to-many"
   ) %>%
     filter(
       # shots admin as of Jan. 1
@@ -287,6 +287,9 @@ write.csv(MMR_sex,
 write.csv(MMR_sex_bc, 
           file = paste0("output/3_coverage/MMR_sex_bc-", home_st, "-", format(Sys.Date(), "%Y%m%d"),".csv"),
           row.names = FALSE)
+write.csv(MMR_race1, 
+          file = paste0("output/3_coverage/MMR_race1-", home_st, "-", format(Sys.Date(), "%Y%m%d"),".csv"),
+          row.names = FALSE)
 write.csv(MMR_race1_bc, 
           file = paste0("output/3_coverage/MMR_race1_bc-", home_st, "-", format(Sys.Date(), "%Y%m%d"),".csv"),
           row.names = FALSE)
@@ -303,6 +306,9 @@ write.csv(Dtap_sex,
           row.names = FALSE)
 write.csv(Dtap_sex_bc, 
           file = paste0("output/3_coverage/Dtap_sex_bc-", home_st, "-", format(Sys.Date(), "%Y%m%d"),".csv"),
+          row.names = FALSE)
+write.csv(Dtap_race1, 
+          file = paste0("output/3_coverage/Dtap_race1-", home_st, "-", format(Sys.Date(), "%Y%m%d"),".csv"),
           row.names = FALSE)
 write.csv(Dtap_race1_bc, 
           file = paste0("output/3_coverage/Dtap_race1_bc-", home_st, "-", format(Sys.Date(), "%Y%m%d"),".csv"),

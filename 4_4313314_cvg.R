@@ -44,7 +44,7 @@ identify_19_35 <- function(yr) {
 # result into a dataframe. Unlike other denominators (ex. denom_flu), 
 # THIS IS A PERSON-LEVEL DENOMINATOR. Children who fall into the 19-35 age range
 # for two consecutive years will be included twice.
-exchg_yrs <- year(exchg_start):year(Sys.Date())
+exchg_yrs <- year(exchg_start):year(exchg_end)
 denom_4313314 <- map(
   exchg_yrs, 
   identify_19_35,
@@ -66,7 +66,7 @@ s4313314_crosswalk <-
 find_4313314_UTD <- function(yr) {
   left_join(
     # select 4313314 CVXs, link to antigen & num required doses 
-    s4313314_crosswalk, immz, by = "cvx", multiple = "all"
+    s4313314_crosswalk, immz, by = "cvx", multiple = "all", relationship = "many-to-many"
   ) %>%
     filter(
       # shots admin as of Jan. 1
@@ -106,7 +106,7 @@ find_4313314_UTD <- function(yr) {
       UTD_w_4313314 = sum(UTD_w_Dtap, UTD_w_Polio, UTD_w_MMR, 
                           UTD_w_Hib, UTD_w_HepB, UTD_w_Var, UTD_w_PCV) >= 7,
       UTD_wo_4313314 = sum(UTD_wo_Dtap, UTD_wo_Polio, UTD_wo_MMR, 
-                          UTD_wo_Hib, UTD_wo_HepB, UTD_wo_Var, UTD_wo_PCV) >= 7,
+                           UTD_wo_Hib, UTD_wo_HepB, UTD_wo_Var, UTD_wo_PCV) >= 7,
       # persons brought UTD by partner iis on at least 1 antigen
       UTD_diff_4313314 = UTD_w_4313314 - UTD_wo_4313314,
       # include the year

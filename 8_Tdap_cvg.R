@@ -48,8 +48,8 @@ denom_adu_1 <- map(
   )
 
 
-# Re-use year 2020 single-year pop estimates for 2021 - 2023
-y2021_plus <- 2021:year(Sys.Date())
+# Re-use year 2020 single-year pop estimates for 2021 - end of data
+y2021_plus <- 2021:year(exchg_end)
 denom_adu <- denom_adu_1
 for (yr in y2021_plus) {
   denom_adu_2 <- denom_adu_1 %>% filter(year == 2020) %>% mutate(year = yr)
@@ -93,7 +93,7 @@ identify_11_17 <- function(yr) {
 
 # apply above function to every year since data exchange began, and pipe the
 # result into a dataframe.
-exchg_yrs <- year(exchg_start):year(Sys.Date())
+exchg_yrs <- year(exchg_start):year(exchg_end)
 denom_adol <- map(
   exchg_yrs, 
   identify_11_17,
@@ -104,21 +104,23 @@ denom_adol <- map(
 denom_tdap <- bind_rows(denom_adol, denom_adu)
 
 # examine values of all variables in the denom: do they make sense? 
-# There should be no NAs, except for county fips?
+# There should be no NAs, except for county fips
 denom_tdap %>% summary_as_factor()
 
 #-----------------------------------------------------------------------------#
 # create numerator
 #-----------------------------------------------------------------------------#
+# Tdap CVX is 115, add more if this ever changes
+tdap_cvx <- c('115')
 
 # given a year, this function identifies anyone initiated on their adolescent 
 # Tdap series by a partner IIS as of Jan 1. (i.e. received 1+ Tdap on or after 
-# their 10th birthday). All ages included.
+# their 10th birthday). 
 find_tdap_init <- function(yr) {
   immz %>%
     filter(
       # select tdap shots admin as of Jan. 1
-      cvx %in% c('115'), 
+      cvx %in% tdap_cvx, 
       admin_date <= as.Date(paste0(yr, '-01-01'))
     ) %>% left_join(
       # pull in dob
@@ -157,7 +159,7 @@ find_tdap_init <- function(yr) {
 }
 
 # apply above function to every year since data exchange began, and pipe the
-# result into a dataframe. 
+# result into a dataframe. All ages are included.
 tdap_shared <- map(
   exchg_yrs,
   find_tdap_init,

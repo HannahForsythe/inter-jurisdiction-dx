@@ -7,5 +7,7 @@ race_2_vals <- c("Hispanic", "NH Black", "NH White", "AI/AN",
                  "NH Asian/Hawaian/OPI", "NH MENA", "Other", "UNK")
 # When did data exchange begin (earliest date)?
 exchg_start <- as.Date('2019-01-01')
+# When did data exchange end?
+exchg_end <- as.Date('2023-01-01')
 # What are the fips codes of border counties in your state?
 border_fips <- c(26041, 26043, 26053, 26071, 26109, 26131)
